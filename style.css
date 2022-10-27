@@ -1,0 +1,152 @@
+/* imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+/* all */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* root */
+
+:root{
+    --green: #008000;
+    --green2: #3b9b3b;
+    --Roboto: 'Roboto Condensed', sans-serif;
+}
+
+/* body */
+
+body{
+    overflow: hidden;
+}
+
+/* navbar */
+
+.navbar{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-left: .5rem;
+}
+
+#navlink{
+    all: unset;
+    cursor: pointer;
+}
+
+#brandname {
+    color: var(--green);
+    font-family: var(--Roboto);
+    font-size: 24pt;
+}
+
+/* mainsec */
+
+.mainsec{
+    font-family: var(--Roboto);
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15vh;
+}
+
+#tittlemsg{
+    margin-bottom: 5vh;
+    color: var(--green);
+    font-size: 32pt;
+}
+
+#creditsmsg{
+    margin-top: 10px;
+    font-size: 20pt;
+    color: #0f0f0f;
+}
+
+#mainmsg-pt1{
+    margin-top: 40px;
+    font-size: 24pt;
+}
+
+#mainmsg-pt2{
+    margin-top: 5vh;
+    font-size: 24pt;
+    font-weight: 600;
+}
+
+#quizlink{
+    margin-top: 10vh;
+    font-size: 16pt;
+    padding: 1.5rem 4rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background-color: var(--green2);
+}
+
+#quizlink:hover{
+    color: #eeeeee;
+    background-color: var(--green);
+    cursor: pointer;
+}
+
+/** media querry's */
+
+@media (max-width: 740px){
+    .mainsec{
+        font-family: var(--Roboto);
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 2vh;
+    }
+    
+    #tittlemsg{
+        margin-bottom: 3vh;
+        color: var(--green);
+        font-size: 26pt;
+    }
+    
+    #creditsmsg{
+        margin-top: 15px;
+        font-size: 20pt;
+        color: #0f0f0f;
+    }
+    
+    #mainmsg-pt1{
+        margin-top: 40px;
+        font-size: 20pt;
+    }
+    
+    #mainmsg-pt2{
+        margin-top: 2vh;
+        font-size: 20pt;
+        font-weight: 600;
+    }
+    
+    #quizlink{
+        margin-top: 10vh;
+        font-size: 16pt;
+        padding: 1.5rem 4rem;
+        font-weight: 600;
+        border: none;
+        border-radius: 20px;
+        color: white;
+        background-color: var(--green2);
+    }
+    
+    #quizlink:hover{
+        color: #eeeeee;
+        background-color: var(--green);
+        cursor: pointer;
+    }
+    
+}
+
