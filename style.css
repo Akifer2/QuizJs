@@ -89,6 +89,11 @@ body{
     background-color: var(--green2);
 }
 
+#quizlink a{
+    all: unset;
+}
+
+
 #quizlink:hover{
     color: #eeeeee;
     background-color: var(--green);
@@ -149,4 +154,3 @@ body{
     }
     
 }
-
