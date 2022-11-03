@@ -9,18 +9,12 @@
     <link rel="stylesheet" href="assets.css">
 </head>
 <body>
-    <section>
-        <div id="msgresp-r">
-            <h1 id="title-r">Sua reposta está correta!</h1>
-            <button class="btn"" id"="nextbtn-r"> progredir para a próxima pergunta<i class="bi bi-arrow-right"></i>
-            </button>
-        </div>
-        <div id="msgresp-w">
-            <h1 id="title-w">Sua resposta está errada!</h1>
-            <button class="btn" id="nextbtn-w"> progredir para a próxima pergunta<i class="bi bi-arrow-right"></i>
-            </button>
-        </div>
-        <script src="script.js"></script>
-    </body>
-    </section>
+    <div id="boxcontainerwrong">
+            <h1 id="wrongtitle">A resposta está errada!</h1>
+            <button class="btn" id="wrongbtn">PróximaPergunta<i class="bi bi-arrow-right"></i></button>
+    </div>
+    <div id="boxcontainerright">
+        <h1 id="righttitle">A resposta está errada!</h1>
+        <button class="btn" id="rightbtn">PróximaPergunta<i class="bi bi-arrow-right"></i></button>
+    </div>
 </html>

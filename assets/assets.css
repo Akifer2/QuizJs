@@ -6,92 +6,100 @@
 
 :root{
     --green: #008000;
-    --green2: #3b9b3b;
-    --red: rgb(128, 0, 0);
-    --red2: #ff000036 ;
+    --green2:#17ac173f;
+    --green3:#126d12;
+    --green4: #2a973827;
+    --red:#800000;
+    --red2:#ff000036 ;
+    --red3:#6e1212;
+    --red4:#af4a4a62;
     --Roboto: 'Roboto Condensed', sans-serif;
 }
 
-
-/* all */
+/* general */
 
 *{
-    font-family: var(--Roboto);
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: var(--Roboto);
+    font-size: 15pt;
 }
 
-div{
-    margin: 15px;
-}
-/** mensagem de acerto */
+/* div */
 
-#msgresp-r{
-    background-color: rgba(0, 128, 6, 0.212); 
-    border: 2px solid green;
-    border-radius: 20px;
-    width: fit-content;
-    padding: 3rem 10rem; 
+#boxcontainerwrong{
+    border: 3px solid var(--red);
+    border-radius: 15px;
+    max-width: fit-content;
+    padding: 1.5rem 8rem 1.5rem 1.5rem;
+    margin: 10px;
+    background-color: var(--red2);
 }
 
-
-#title-r{
-    color: var(--green2);
-}
-
-
-#nextbtn-r{
-    margin-top: 15px;
-    font-size: 12pt;
-    font-weight: bolder;
-    background: none;
-    border-radius: 20px;
-    color: var(--green);
-    border-color: var(--green);
-    padding: 1rem;
-}
-
-/*! mensagem de erro */
-
-#msgresp-w{
-    background-color: var(--red2); 
-    border: 2px solid var(--red);
-    border-radius: 20px;
-    width: fit-content;
-    padding: 3rem 10rem; 
-}
-
-
-#title-w{
-    color:  rgb(128, 0, 0);
-}
-
-
-#nextbtn-w{
-    
-    margin-top: 15px;
-    font-size: 12pt;
-    font-weight: bolder;
-    background: none;
-    border-radius: 20px;
-    color: var(--red);
-    border-color: var(--red);
-    padding: 1rem;
-}
-
-
-/* btn */
+/* button */
 
 .btn{
-    display: flex;
-    text-align: center;
-    justify-content: space-between;
+    all: unset;
     align-items: center;
+    justify-content: center;
     cursor: pointer;
+    border: 2px solid #fff;
+    background: none;
+    padding: 10px;
+    padding-left: 15px;
+    border-radius: 20px;
 }
 
 i{
-    font-size: 20pt;
-    margin-left: 10px;
+    padding: 0 5px 0 5px;
+    align-self: center;
 }
+
+/*! resposta errada */
+
+#wrongtitle{
+    font-size: 20pt;
+    margin-bottom: 10px;
+    color: var(--red);
+}
+
+#wrongbtn{
+    color: var(--red);
+    border-color: var(--red);
+}
+
+#wrongbtn:hover{
+    color: var(--red3);
+    border-color: var(--red3);
+    background-color: var(--red4);
+}
+
+/** resposta certa **/
+
+#boxcontainerright{
+    border: 3px solid var(--green);
+    border-radius: 15px;
+    max-width: fit-content;
+    padding: 1.5rem 8rem 1.5rem 1.5rem;
+    margin: 10px;
+    background-color: var(--green2);
+}
+
+#righttitle{
+    font-size: 20pt;
+    margin-bottom: 10px;
+    color: var(--green);
+}
+
+#rightbtn{
+    color: var(--green);
+    border-color: var(--green);
+}
+
+#rightbtn:hover{
+    color: var(--green3);
+    border-color: var(--green3);
+    background-color: var(--green4);
+}
+
